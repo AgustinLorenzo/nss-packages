@@ -164,7 +164,7 @@ ifneq ($(CONFIG_PACKAGE_kmod-bonding),)
 ECM_MAKE_OPTS+=ECM_INTERFACE_BOND_ENABLE=y
 endif
 
-ifneq ($(CONFIG_PACKAGE_kmod-qmi_wwan_q),)
+ifneq ($(CONFIG_PACKAGE_kmod-qmi_wwan_q)$(CONFIG_PACKAGE_kmod-qmi_wwan_q_nss),)
 ECM_MAKE_OPTS+=ECM_INTERFACE_RAWIP_ENABLE=y
 endif
 
